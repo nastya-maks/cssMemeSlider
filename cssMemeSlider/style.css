@@ -5,6 +5,8 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
   background-color: #1e2833;
 }
 
@@ -34,13 +36,14 @@ input[type='radio'] {
 
 .mem img {
   width: 100%;
+  border-radius: 0.5rem;
 }
 
 .control-container {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .description-container {
@@ -55,7 +58,7 @@ input[type='radio'] {
 
 .description {
   width: 25%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   transition: all 0.5s ease;
 }
 
@@ -166,4 +169,21 @@ input[type='radio'] {
 
 #control-4:checked ~ .control-container .description-container .description-first {
   margin-left: -75%;
+}
+
+@media (max-width: 1023px) {
+  .control-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .controls {
+    width: 100%;
+    justify-content: center;
+  }
+  .description-container {
+    width: 100%;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
 }

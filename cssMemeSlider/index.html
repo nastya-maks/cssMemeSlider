@@ -3,39 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>cssMemeSlider</title>
 </head>
 <body>
 <div class="container">
-    <div class="slider-container">
-      <input id="control-1" type="radio" name="slide" checked>
-      <input id="control-2" type="radio" name="slide">
-      <input id="control-3" type="radio" name="slide">
-      <input id="control-4" type="radio" name="slide">
-      <div class="slider-row">
-        <div class="mem mem-1"><img src="./assets/image 1.jpg" alt="mem"></div>
-        <div class="mem"><img src="./assets/image 2.jpg" alt="mem"></div>
-        <div class="mem"><img src="./assets/image 3.jpg" alt="mem"></div>
-        <div class="mem"><img src="./assets/image 4.jpg" alt="mem"></div>
+  <div class="slider-container">
+    <input id="control-1" type="radio" name="slide" checked>
+    <input id="control-2" type="radio" name="slide">
+    <input id="control-3" type="radio" name="slide">
+    <input id="control-4" type="radio" name="slide">
+    <div class="slider-row">
+      <div class="mem mem-1"><img src="./assets/image 1.jpg" alt="mem"></div>
+      <div class="mem"><img src="./assets/image 2.jpg" alt="mem"></div>
+      <div class="mem"><img src="./assets/image 3.jpg" alt="mem"></div>
+      <div class="mem"><img src="./assets/image 4.jpg" alt="mem"></div>
+    </div>
+    <div class="control-container">
+      <div class="description-container">
+        <div class="description-row">
+          <div class="description description-first"><p>Hello</p></div>
+          <div class="description"><p>I'm</p></div>
+          <div class="description"><p>tired</p></div>
+          <div class="description"><p>sos</p></div>
+        </div>
       </div>
-      <div class="control-container">
-        <div class="description-container">
-          <div class="description-row">
-            <div class="description description-first"><p>Hello</p></div>
-            <div class="description"><p>I'm</p></div>
-            <div class="description"><p>tired</p></div>
-            <div class="description"><p>sos</p></div>
-          </div>
-        </div>
-        <div class="controls">
-          <label for="control-1" class="control-area"><span class="control control-one"></span></label>
-          <label for="control-2" class="control-area"><span class="control control-two"></span></label>
-          <label for="control-3" class="control-area"><span class="control control-three"></span></label>
-          <label for="control-4" class="control-area"><span class="control control-four"></span></label>
-        </div>
+      <div class="controls">
+        <label for="control-1" class="control-area"><span class="control control-one"></span></label>
+        <label for="control-2" class="control-area"><span class="control control-two"></span></label>
+        <label for="control-3" class="control-area"><span class="control control-three"></span></label>
+        <label for="control-4" class="control-area"><span class="control control-four"></span></label>
       </div>
     </div>
+  </div>
 </div>
 </body>
 </html>
