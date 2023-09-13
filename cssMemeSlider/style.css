@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  background-color: #1e2833;
+}
+
+input[type='radio'] {
+  opacity: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-row {
+  width: 400%;
+  display: flex;
+}
+
+.mem {
+  width: 25%;
+  transition: all 0.5s ease;
+}
+
+.mem img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.control-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.description-container {
+  width: 70%;
+  overflow: hidden;
+}
+
+.description-row {
+  width: 400%;
+  display: flex;
+}
+
+.description {
+  width: 25%;
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+.controls {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.control-area {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.control {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  border: 0.2rem transparent solid;
+  background-color: #2b92f9;
+  transition: all 0.2s ease;
+}
+
+.control-area:hover .control{
+  background-color: #fff;
+}
+
+#control-1:active ~ .control-container .controls .control-one {
+  border: 0.2rem #fff solid;
+  background-color: transparent;
+}
+
+#control-1:checked ~ .control-container .controls .control-one {
+  border: 0.2rem #2b92f9 solid;
+  background-color: transparent;
+}
+
+#control-1:checked ~ .control-container .controls .control-one:hover {
+  border: 0.2rem #fff solid;
+  background-color: transparent;
+}
+
+#control-2:checked ~ .control-container .controls .control-two:hover {
+  border: 0.2rem #fff solid;
+  background-color: transparent;
+}
+
+#control-3:checked ~ .control-container .controls .control-three:hover {
+  border: 0.2rem #fff solid;
+  background-color: transparent;
+}
+
+#control-4:checked ~ .control-container .controls .control-four:hover {
+  border: 0.2rem #fff solid;
+  background-color: transparent;
+}
+
+#control-2:checked ~ .control-container .controls .control-two {
+  border: 0.2rem #2b92f9 solid;
+  background-color: transparent;
+}
+
+#control-3:checked ~ .control-container .controls .control-three {
+  border: 0.2rem #2b92f9 solid;
+  background-color: transparent;
+}
+
+#control-4:checked ~ .control-container .controls .control-four {
+  border: 0.2rem #2b92f9 solid;
+  background-color: transparent;
+}
+
+#control-1:checked ~ .slider-row .mem-1 {
+  margin-left: 0;
+}
+
+#control-1:checked ~ .control-container .description-container .description-first {
+  margin-left: 0;
+}
+
+#control-2:checked ~ .slider-row .mem-1 {
+  margin-left: -25%;
+}
+
+#control-2:checked ~ .control-container .description-container .description-first {
+  margin-left: -25%;
+}
+
+#control-3:checked ~ .slider-row .mem-1 {
+  margin-left: -50%;
+}
+
+#control-3:checked ~ .control-container .description-container .description-first {
+  margin-left: -50%;
+}
+
+#control-4:checked ~ .slider-row .mem-1 {
+  margin-left: -75%;
+}
+
+#control-4:checked ~ .control-container .description-container .description-first {
+  margin-left: -75%;
+}
+
+@media (max-width: 1023px) {
+  .control-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .controls {
+    width: 100%;
+    justify-content: center;
+  }
+  .description-container {
+    width: 100%;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
+}
